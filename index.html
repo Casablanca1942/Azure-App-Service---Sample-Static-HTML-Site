@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Azure App Service Static HTML Sample</title>
+    <meta name="description" content="Sample static site for Azure App Service MS Learn training" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Azure App Service Static HTML Sample</h1>
+      <p class="tagline">Deployed via Azure App Service (Linux Free tier)</p>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#next">Next Steps</a></li>
+          <li><a href="https://learn.microsoft.com/azure/app-service/" target="_blank" rel="noopener">Docs</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>This is a minimal, framework-free static site you can use in Microsoft Learn modules to practice deploying to <strong>Azure App Service</strong>. Edit <code>index.html</code>, <code>styles.css</code>, or <code>script.js</code>, then redeploy.</p>
+      </section>
+
+      <section id="features">
+        <h2>Key Points</h2>
+        <ul>
+          <li>No build step required.</li>
+          <li>Deploy with a single <code>az webapp up --html</code> command.</li>
+          <li>Uses Free (F1) Linux App Service Plan by default in examples.</li>
+          <li>Includes basic accessibility & responsive layout.</li>
+        </ul>
+      </section>
+
+      <section id="next">
+        <h2>Try It</h2>
+        <ol>
+          <li>Open browser console to see a greeting logged by <code>script.js</code>.</li>
+          <li>Modify content locally, redeploy, then hard refresh (Ctrl+F5).</li>
+          <li>Add a new page (e.g. <code>about.html</code>) and link it.</li>
+        </ol>
+        <button id="ctaBtn" type="button">Show Deployment Command</button>
+        <pre id="cmd" hidden></pre>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <small>&copy; <span id="year"></span> Sample Static Site • <a href="https://github.com/" rel="noopener" target="_blank">GitHub</a></small>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
